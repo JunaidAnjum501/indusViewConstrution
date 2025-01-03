@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery</title>
+    <script src="//unpkg.com/alpinejs" defer></script>
+    <link rel="stylesheet" href="output.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        .modal-image {
+            max-width: 90%;
+            max-height: 90%;
+        }
+    </style>
+</head>
+<body class="">
+    <!-- Navbar & Hero-Section start -->
+    <!-- Navbar section-->
+    <header
+    >
+      <div
+        class="fixed right-4 bottom-6 md:right-14 md:bottom-4 cursor-pointer     "
+      >
+        <a href="https://wa.me/03314434449"> 
+          <img class="w-14 h-14" src="img/whatsapp.png" />
+        </a>
+      </div>
+      <nav
+        x-data="{ isOpen: false }"
+        class="relative w-full bg-[#ebe9ec] h-24 z-30 flex justify-center"
+      >
+        <div
+          class="container px-2 py-4 bg-[#ebe9ec] z-30 mx-auto md:flex md:justify-between md:items-center "
+        >
+          <div class="flex items-center z-30 justify-between">
+            <a class="w-full" href="#">
+              <img class="w-32  md:w-40 z-30 " src="img/logo.png" alt="" />
+            </a>
+
+            <!-- Mobile menu button -->
+            <div class="flex md:hidden">
+              <button
+                x-cloak
+                @click="isOpen = !isOpen"
+                type="button"
+                class="text-black font-bold hover:text-gray-600 focus:outline-none focus:text-gray-800"
+                aria-label="toggle menu"
+              >
+                <svg
+                  x-show="!isOpen"
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="w-6 h-6"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                  stroke-width="2"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M4 8h16M4 16h16"
+                  />
+                </svg>
+
+                <svg
+                  x-show="isOpen"
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="w-6 h-6"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                  stroke-width="2"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M6 18L18 6M6 6l12 12"
+                  />
+                </svg>
+              </button>
+            </div>
+          </div>
+
+          <!-- Mobile Menu open: "block", Menu closed: "hidden" -->
+          <div
+            x-cloak
+            :class="[isOpen ? 'translate-x-0 opacity-100 ' : 'opacity-0 -translate-x-full']"
+            class="absolute inset-x-0 z-20 w-full px-6 py-4 flex items-center justify-center top-18 transition-all duration-500 ease-in-out bg-[#eceaed] bg-opacity-60 md:bg-transparent md:mt-0 md:p-0 md:top-0 md:relative md:w-auto md:opacity-100 md:translate-x-0 md:flex md:items-center"
+          >
+            <div
+              class="flex flex-col  items-center md:flex-row md:mx-1 gap-1 lg:gap-5 font-body"
+            >
+              <a
+                class="my-2 text-black text-lg font-medium transition-colors duration-300 transform text-center hover:text-[#C8102E] md:mx-4 md:my-0"
+                href="./index.html"
+                >Home</a
+              >
+              <a
+                class="my-2 text-black text-lg font-medium transition-colors duration-300 transform text-center hover:text-[#C8102E]  md:mx-4 md:my-0"
+                href="./about.html"
+                >About</a
+              >
+              <a
+                class="my-2 text-black text-lg font-medium transition-colors duration-300 transform text-center hover:text-[#C8102E]  md:mx-4 md:my-0"
+                href="#Services"
+                >Services</a
+              >
+              <a
+                class="my-2 text-black text-lg font-medium transition-colors duration-300 transform text-center hover:text-[#C8102E]  md:mx-4 md:my-0"
+                href="#"
+                >Gallery</a
+              >
+              <a
+              class="my-2 text-black text-lg font-medium transition-colors duration-300 transform text-center hover:text-[#C8102E]  md:mx-4 md:my-0"
+              href="./blogs.html"
+              >Blogs</a
+            >
+              <a
+                class="my-2 text-black text-lg font-medium transition-colors duration-300 transform text-center hover:text-[#C8102E]  md:mx-4 md:my-0"
+                href="#"
+                >Contact Us</a
+              >
+            </div>
+          </div>
+        </div>
+      </nav>
+
+      <!-- Gallery Section Start -->
+    <div class="container px-6 py-10 mx-auto">
+        <h1
+          class="text-3xl font-bold font-montserrat text-center text-black md:text-4xl lg:text-5xl"
+        >
+          Gallery
+        </h1>
+        <div class="mb-4 mt-2 flex justify-center">
+          <span
+            class="inline-block w-20 md:w-32 h-1 bg-[#C8102E] rounded-full"
+          ></span>
+          <span
+            class="inline-block w-3 h-1 ml-1 bg-[#C8102E] rounded-full"
+          ></span>
+          <span
+            class="inline-block w-1 h-1 ml-1 bg-[#C8102E] rounded-full"
+          ></span>
+        </div>
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4">
+        <img src="./pages/portfolio/d1 (1).jpeg" alt="Image 1" class="cursor-pointer rounded-lg shadow-lg h-96 w-80" id="image1">
+        <img src="./pages/portfolio/d1 (10).jpeg" alt="Image 2" class="cursor-pointer rounded-lg shadow-lg h-96 w-80" id="image2">
+        <img src="./pages/portfolio/d1 (9).jpeg" alt="Image 3" class="cursor-pointer rounded-lg shadow-lg h-96 w-80" id="image3">
+        <img src="./pages/portfolio/d1 (8).jpeg" alt="Image 4" class="cursor-pointer rounded-lg shadow-lg h-96 w-80" id="image4">
+        <img src="./pages/portfolio/d1 (7).jpeg" alt="Image 5" class="cursor-pointer rounded-lg shadow-lg h-96 w-80" id="image5">
+        <img src="./pages/portfolio/d1 (6).jpeg" alt="Image 6" class="cursor-pointer rounded-lg shadow-lg h-96 w-80" id="image6">
+        <img src="./pages/portfolio/d1 (5).jpeg" alt="Image 7" class="cursor-pointer rounded-lg shadow-lg h-96 w-80" id="image7">
+        <img src="./pages/portfolio/d1 (4).jpeg" alt="Image 8" class="cursor-pointer rounded-lg shadow-lg h-96 w-80" id="image8">
+        <img src="./pages/portfolio/d1 (3).jpeg" alt="Image 1" class="cursor-pointer rounded-lg shadow-lg h-96 w-80" id="image1">
+        <img src="./pages/portfolio/d1 (2).jpeg" alt="Image 2" class="cursor-pointer rounded-lg shadow-lg h-96 w-80" id="image2">
+        <img src="./pages/portfolio/kit1.jpg" alt="Image 2" class="cursor-pointer rounded-lg shadow-lg h-96 w-80" id="image2">
+        <img src="./pages/portfolio/kit2.jpg" alt="Image 2" class="cursor-pointer rounded-lg shadow-lg h-96 w-80" id="image2">
+        <img src="./pages/portfolio/kit3.jpg" alt="Image 2" class="cursor-pointer rounded-lg shadow-lg h-96 w-80" id="image2">
+        <img src="./pages/portfolio/kit4.jpg" alt="Image 2" class="cursor-pointer rounded-lg shadow-lg h-96 w-80" id="image2">
+        <img src="./pages/portfolio/kit5.jpg" alt="Image 2" class="cursor-pointer rounded-lg shadow-lg h-96 w-80" id="image2">
+        <img src="./pages/portfolio/kit6.jpg" alt="Image 2" class="cursor-pointer rounded-lg shadow-lg h-96 w-80" id="image2">
+        <img src="./pages/portfolio/wall.jpg" alt="Image 2" class="cursor-pointer rounded-lg shadow-lg h-96 w-80" id="image2">
+        <img src="./pages/portfolio/wall1.jpg" alt="Image 2" class="cursor-pointer rounded-lg shadow-lg h-96 w-80" id="image2">
+        <img src="./pages/portfolio/wall2.jpg" alt="Image 2" class="cursor-pointer rounded-lg shadow-lg h-96 w-80" id="image2">
+        <img src="./pages/portfolio/wall3.jpg" alt="Image 2" class="cursor-pointer rounded-lg shadow-lg h-96 w-80" id="image2">
+        <img src="./pages/portfolio/wall4.jpg" alt="Image 2" class="cursor-pointer rounded-lg shadow-lg h-96 w-80" id="image2">
+        <img src="./pages/portfolio/wall5.jpg" alt="Image 2" class="cursor-pointer rounded-lg shadow-lg h-96 w-80" id="image2">
+        <img src="./pages/portfolio/wall6.jpg" alt="Image 2" class="cursor-pointer rounded-lg shadow-lg h-96 w-80" id="image2">
+        <img src="./pages/portfolio/wall7.jpg" alt="Image 2" class="cursor-pointer rounded-lg shadow-lg h-96 w-80" id="image2">
+        <img src="./pages/portfolio/wall8.jpg" alt="Image 2" class="cursor-pointer rounded-lg shadow-lg h-96 w-80" id="image2">
+        <img src="./pages/portfolio/wash1.jpg" alt="Image 2" class="cursor-pointer rounded-lg shadow-lg h-96 w-80" id="image2">
+        <img src="./pages/portfolio/wash2.jpg" alt="Image 2" class="cursor-pointer rounded-lg shadow-lg h-96 w-80" id="image2">
+        <img src="./pages/portfolio/wash3.jpg" alt="Image 2" class="cursor-pointer rounded-lg shadow-lg h-96 w-80" id="image2">
+        <img src="./pages/portfolio/wash4.jpg" alt="Image 2" class="cursor-pointer rounded-lg shadow-lg h-96 w-80" id="image2">
+        <img src="./pages/portfolio/wash5.jpg" alt="Image 2" class="cursor-pointer rounded-lg shadow-lg h-96 w-80" id="image2">
+        <img src="./pages/portfolio/wash6.jpg" alt="Image 2" class="cursor-pointer rounded-lg shadow-lg h-96 w-80" id="image2">
+        <img src="./pages/portfolio/wash7.jpg" alt="Image 2" class="cursor-pointer rounded-lg shadow-lg h-96 w-80" id="image2">
+        <img src="./pages/portfolio/wash8.jpg" alt="Image 2" class="cursor-pointer rounded-lg shadow-lg h-96 w-80" id="image2">
+        <!-- <img src="./pages/portfolio/wall.jpg" alt="Image 2" class="cursor-pointer rounded-lg shadow-lg h-96 w-80" id="image2"> -->
+        
+        
+        
+        
+       
+    </div>
+
+    <!-- The Modal -->
+    <div id="myModal" class="fixed inset-0 bg-black bg-opacity-75 z-30 hidden flex items-center justify-center">
+        <span class="absolute top-5 right-5 text-white text-3xl cursor-pointer" id="closeModal">&times;</span>
+        <img class="modal-image rounded-lg" id="modalImage">
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>

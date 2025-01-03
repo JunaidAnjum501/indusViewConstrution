@@ -621,8 +621,16 @@ video {
   right: 1rem;
 }
 
+.right-5 {
+  right: 1.25rem;
+}
+
 .top-16 {
   top: 4rem;
+}
+
+.top-5 {
+  top: 1.25rem;
 }
 
 .z-20 {
@@ -688,6 +696,10 @@ video {
   margin-right: 0.5rem;
 }
 
+.mt-1 {
+  margin-top: 0.25rem;
+}
+
 .mt-10 {
   margin-top: 2.5rem;
 }
@@ -714,10 +726,6 @@ video {
 
 .mt-8 {
   margin-top: 2rem;
-}
-
-.mt-1 {
-  margin-top: 0.25rem;
 }
 
 .block {
@@ -792,16 +800,20 @@ video {
   height: 2rem;
 }
 
+.h-96 {
+  height: 24rem;
+}
+
+.h-\[24rem\] {
+  height: 24rem;
+}
+
 .h-\[28rem\] {
   height: 28rem;
 }
 
 .h-auto {
   height: auto;
-}
-
-.h-\[24rem\] {
-  height: 24rem;
 }
 
 .w-1 {
@@ -848,6 +860,14 @@ video {
   width: 2rem;
 }
 
+.w-80 {
+  width: 20rem;
+}
+
+.w-\[24rem\] {
+  width: 24rem;
+}
+
 .w-\[28rem\] {
   width: 28rem;
 }
@@ -858,14 +878,6 @@ video {
 
 .w-full {
   width: 100%;
-}
-
-.w-\[2rem\] {
-  width: 2rem;
-}
-
-.w-\[24rem\] {
-  width: 24rem;
 }
 
 .max-w-lg {
@@ -1057,6 +1069,16 @@ video {
   background-color: rgb(200 16 46 / var(--tw-bg-opacity, 1));
 }
 
+.bg-\[\#ebe9ec\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(235 233 236 / var(--tw-bg-opacity, 1));
+}
+
+.bg-\[\#eceaed\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(236 234 237 / var(--tw-bg-opacity, 1));
+}
+
 .bg-\[\#f2f2f2\] {
   --tw-bg-opacity: 1;
   background-color: rgb(242 242 242 / var(--tw-bg-opacity, 1));
@@ -1087,65 +1109,52 @@ video {
   background-color: rgb(255 255 255 / var(--tw-bg-opacity, 1));
 }
 
-.bg-\[\#f\] {
-  background-color: #f;
-}
-
-.bg-\[\#eceaed\] {
-  --tw-bg-opacity: 1;
-  background-color: rgb(236 234 237 / var(--tw-bg-opacity, 1));
-}
-
 .bg-\[\] {
   background-color: ;
 }
 
-.bg-\[c\] {
-  background-color: c;
+.bg-\[\#\] {
+  background-color: #;
 }
 
-.bg-\[c8102e\] {
-  background-color: c8102e;
-}
-
-.bg-opacity-90 {
-  --tw-bg-opacity: 0.9;
-}
-
-.bg-opacity-40 {
-  --tw-bg-opacity: 0.4;
+.bg-\[\#\#ebe9ec\] {
+  background-color: ##ebe9ec;
 }
 
 .bg-opacity-60 {
   --tw-bg-opacity: 0.6;
 }
 
-.bg-\[url\(\'img\/hero\.jpg\'\)\] {
-  background-image: url('img/hero.jpg');
+.bg-opacity-75 {
+  --tw-bg-opacity: 0.75;
 }
 
-.bg-\[url\(\'\'\)\] {
-  background-image: url('');
-}
-
-.bg-\[url\(\'https\:\/\/img\.freepik\.com\/free-photo\/crane-building-construction_23-2147785504\.jpg\?t\=st\=1735912214\~exp\=1735915814\~hmac\=c3fb1901ff40347f6a22164709e438c95c270003800a785820a81c64c9ff40ef\&w\=900\'\)\] {
-  background-image: url('https://img.freepik.com/free-photo/crane-building-construction_23-2147785504.jpg?t=st=1735912214~exp=1735915814~hmac=c3fb1901ff40347f6a22164709e438c95c270003800a785820a81c64c9ff40ef&w=900');
-}
-
-.bg-\[url\(\'img\/\'\)\] {
-  background-image: url('img/');
-}
-
-.bg-\[url\(\'img\/bg\.\'\)\] {
-  background-image: url('img/bg.');
+.bg-opacity-90 {
+  --tw-bg-opacity: 0.9;
 }
 
 .bg-\[url\(\'img\/bg\.jpg\'\)\] {
   background-image: url('img/bg.jpg');
 }
 
-.bg-\[url\(\'img\/b\.jpg\'\)\] {
-  background-image: url('img/b.jpg');
+.bg-\[url\(\'img\/hero\.jpg\'\)\] {
+  background-image: url('img/hero.jpg');
+}
+
+.bg-\[url\(\'img\'\)\] {
+  background-image: url('img');
+}
+
+.bg-\[url\(\'img\/\'\)\] {
+  background-image: url('img/');
+}
+
+.bg-\[url\(\'img\/bg\'\)\] {
+  background-image: url('img/bg');
+}
+
+.bg-\[url\(\'img\/bg\.\'\)\] {
+  background-image: url('img/bg.');
 }
 
 .bg-cover {
@@ -1185,10 +1194,6 @@ video {
 
 .p-8 {
   padding: 2rem;
-}
-
-.p-6 {
-  padding: 1.5rem;
 }
 
 .px-2 {
@@ -1410,26 +1415,6 @@ video {
   color: rgb(255 255 255 / var(--tw-text-opacity, 1));
 }
 
-.text-\[\#F\] {
-  color: #F;
-}
-
-.text-\[\] {
-  color: ;
-}
-
-.text-\[\#\] {
-  color: #;
-}
-
-.text-\[\#c8\] {
-  color: #c8;
-}
-
-.text-\[\#c810\] {
-  color: #c810;
-}
-
 .placeholder-gray-400::-moz-placeholder {
   --tw-placeholder-opacity: 1;
   color: rgb(156 163 175 / var(--tw-placeholder-opacity, 1));
@@ -1551,6 +1536,11 @@ video {
   color: rgb(200 16 46 / var(--tw-text-opacity, 1));
 }
 
+.hover\:text-\[\#d14a61\]:hover {
+  --tw-text-opacity: 1;
+  color: rgb(209 74 97 / var(--tw-text-opacity, 1));
+}
+
 .hover\:text-black:hover {
   --tw-text-opacity: 1;
   color: rgb(0 0 0 / var(--tw-text-opacity, 1));
@@ -1559,19 +1549,6 @@ video {
 .hover\:text-gray-600:hover {
   --tw-text-opacity: 1;
   color: rgb(75 85 99 / var(--tw-text-opacity, 1));
-}
-
-.hover\:text-\[\]:hover {
-  color: ;
-}
-
-.hover\:text-\[\#c\]:hover {
-  color: #c;
-}
-
-.hover\:text-\[\#d14a61\]:hover {
-  --tw-text-opacity: 1;
-  color: rgb(209 74 97 / var(--tw-text-opacity, 1));
 }
 
 .hover\:underline:hover {
@@ -1707,6 +1684,10 @@ video {
     margin-top: 2rem;
   }
 
+  .md\:mt-2 {
+    margin-top: 0.5rem;
+  }
+
   .md\:flex {
     display: flex;
   }
@@ -1738,6 +1719,10 @@ video {
 
   .md\:grid-cols-2 {
     grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .md\:grid-cols-3 {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 
   .md\:flex-row {
@@ -1772,11 +1757,6 @@ video {
 
   .md\:p-8 {
     padding: 2rem;
-  }
-
-  .md\:py-10 {
-    padding-top: 2.5rem;
-    padding-bottom: 2.5rem;
   }
 
   .md\:py-6 {
@@ -1845,6 +1825,10 @@ video {
     grid-template-columns: repeat(4, minmax(0, 1fr));
   }
 
+  .lg\:grid-cols-5 {
+    grid-template-columns: repeat(5, minmax(0, 1fr));
+  }
+
   .lg\:items-center {
     align-items: center;
   }
@@ -1877,14 +1861,24 @@ video {
     line-height: 1;
   }
 
+  .lg\:text-6xl {
+    font-size: 3.75rem;
+    line-height: 1;
+  }
+
   .lg\:text-7xl {
     font-size: 4.5rem;
     line-height: 1;
   }
 
-  .lg\:text-6xl {
-    font-size: 3.75rem;
-    line-height: 1;
+  .lg\:text-lg {
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+  }
+
+  .lg\:text-xl {
+    font-size: 1.25rem;
+    line-height: 1.75rem;
   }
 }
 
@@ -1893,24 +1887,20 @@ video {
     margin-top: 3rem;
   }
 
-  .xl\:h-\[34rem\] {
-    height: 34rem;
-  }
-
   .xl\:h-\[30rem\] {
     height: 30rem;
   }
 
-  .xl\:w-\[34rem\] {
-    width: 34rem;
-  }
-
-  .xl\:w-\[rem\] {
-    width: rem;
+  .xl\:h-\[34rem\] {
+    height: 34rem;
   }
 
   .xl\:w-\[30rem\] {
     width: 30rem;
+  }
+
+  .xl\:w-\[34rem\] {
+    width: 34rem;
   }
 
   .xl\:grid-cols-3 {
