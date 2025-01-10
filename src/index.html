@@ -11,10 +11,24 @@
     <title>Indus View Construction</title>
   </head>
   <body>
+ <!-- this is top up bar -->
+ <script>
+  function scrollToTop() {
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth'
+    });
+  }
+</script>
+<button onclick="scrollToTop()" class="fixed bottom-20 right-4 z-10 md:bottom-20  md:right-14">
+<img class="h-14  w-14" src="./img/arrow_13426858.png" alt="" srcset="">
+</button>
+<!-- top up bar end here--> 
+
     <!-- Navbar & Hero-Section start -->
     <!-- Navbar section-->
     <header
-      class="bg-[url('img/bg.jpg')] bg-no-repeat bg-cover bg-centergit object-contain h-auto relative "
+      class="bg-[url('img/bg.jpg')] bg-no-repeat bg-cover z-20 bg-centergit object-contain h-auto relative "
       id="#Home"
     >
       <div
